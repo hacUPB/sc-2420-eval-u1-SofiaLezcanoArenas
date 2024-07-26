@@ -69,3 +69,5 @@ CPU es la abreviatura de Central Processing Unit (Unidad Central de Procesamie
 - **CPU de escritorio**: estos son los procesadores que se instalan en los ordenadores de escritorio. Muchos procesadores de escritorio modernos también incluyen una tarjeta gráfica integrada, que es suficiente para las aplicaciones estándar.
 - **Procesadores móviles**: en la mayoría de los casos, los de escritorio y portátiles se diferencian principalmente en el consumo de energía. Sin embargo, las CPU de los ordenadores de escritorio se consideran más potentes que las de los portátiles.
 - **CPU de servidor**: tienen un mayor número de núcleos para poder realizar muchas operaciones simultáneamente y de forma eficiente. Además, los servidores suelen funcionar durante todo el día, por lo que la alta carga puede compensarse mediante el número de núcleos.
+## Anexo: mapa conceptual
+![Mapa conceptual](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad1/Arquitectura%20y%20componentes%20de%20una%20computadora.jpg)
