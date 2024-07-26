@@ -72,4 +72,4 @@ CPU es la abreviatura de Central Processing Unit (Unidad Central de Procesamie
 ## Anexo: mapa conceptual
 ![Mapa conceptual](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad1/Arquitectura%20y%20componentes%20de%20una%20computadora.jpg)
 
-[[audio-{ExplicacionMapa.wav}-{Explicación mapa conceptual}]]
+![](ExplicacionMapa.mp4)
