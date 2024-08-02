@@ -2,7 +2,7 @@
 
 ## Multiplicador de números enteros
 
-![código_multiplicador](https://github.com/user-attachments/assets/1d6192a4-10df-4801-9c9f-5d6e3b251096)
+![código_multiplicador](image-1.png)
 
 ### Explicación
 En este programa se realizan los siguientes procesos:
