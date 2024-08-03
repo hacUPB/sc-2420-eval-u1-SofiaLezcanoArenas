@@ -53,7 +53,7 @@ Para este programa se va a asumir que a < b y que ambos números son enteros pos
 ### Proceso de creación
 Dada la experiencia del anterior ejercicio, este programa se comenzó a planear desde el pseudocódigo. En esta ocasión, no se hizo la pequeña adaptación del segundo ejercicio a un lenguaje más cercano al ensamblador, sino que se conservó unicamente la de pseudocódigo pensado desde un lenguaje de alto nivel.
 
-
+![imagen-3-pseudocódigo](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad2/image-4.jpeg)
 
 Se notó cierto cambio, sin esta adaptación el proceso fue un poco más demorado. Sin embargo, fue más sencillo que hacerlo directamente en lenguaje ensamblador.
 
