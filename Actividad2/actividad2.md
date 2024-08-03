@@ -35,7 +35,7 @@ Este programa se intentó realizar directamente en lenguaje ensamblador, sin emb
 
 ![WhatsApp Image 2024-08-02 at 11 40 11](https://github.com/user-attachments/assets/b4d399d7-179a-4bb6-83ac-e74c6d99477a)
 
-
+![imagen_2_pseudocódigo](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad2/image-3.jpeg)
 
 El resultado fue sorprendente, en cuestión de un par de minutos se logró programar en lenguaje ensamblador luego del proceso con el pseudocódigo. La diferencia fue realmente significativa, puesto que al usar variables, todo se pudo desarrollar de mejor manera.
 
