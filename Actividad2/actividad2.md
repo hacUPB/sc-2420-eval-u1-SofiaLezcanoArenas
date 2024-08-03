@@ -41,11 +41,22 @@ El resultado fue sorprendente, en cuestión de un par de minutos se logró progr
 
 ## Sumador de números naturales en un rango incluyendo los extremos
 
+![código_sumador_rango](image-3.png)
+
 ### Explicación
+Para este programa se va a asumir que a < b y que ambos números son enteros positivos, ya que de lo contrario, realizar las pruebas para comprobarlo, alargaría y enredaría el código. Aclarado lo anterior, aquí se realizan los siguientes procesos:
+- Se le asigna a la variable b el valor final del intervalo, que también es el máximo valor al que podrá llegar la variable a.
+- Se inicializa a en el valor inicial del intervalo.
+- Se inicializa el valor de la posición 2 de la memoria RAM en 0, como método preventivo de cruce de valores en diferentes ejecuciones.
+- En cada ciclo, el valor almacenado en a se le pasa a la variable D, para luego sumar esto con el contenido de la posición 2. Finalmente, se le suma una unidad al valor de a y se compara con el valor de b mediante una resta para saber si ya se ha llegado al extremo del intervalo. Si ya se sumó el extremo final, el ciclo termina.
 
 ### Proceso de creación
-Dada la experiencia del anterior ejercicio, este programa se comenzó a planear desde el pseudocódigo.
+Dada la experiencia del anterior ejercicio, este programa se comenzó a planear desde el pseudocódigo. En esta ocasión, no se hizo la pequeña adaptación del segundo ejercicio a un lenguaje más cercano al ensamblador, sino que se conservó unicamente la de pseudocódigo pensado desde un lenguaje de alto nivel.
 
-## Evidencia trabajo en clase
 
-![WhatsApp Image 2024-08-02 at 11 40 49](https://github.com/user-attachments/assets/03087b7d-4b5d-4a43-b65d-0154d801f8b1)
+
+Se notó cierto cambio, sin esta adaptación el proceso fue un poco más demorado. Sin embargo, fue más sencillo que hacerlo directamente en lenguaje ensamblador.
+
+## Conclusión
+
+De las tres diferentes experiencias con cada programa, se puede concluir que el camino más adecuado sería el del segundo ejercicio, pasando por tres pasos para obtener el programa en lenguaje ensamblador. Podría pensarse que es esfuerzo desperdiciado, pero definitivamente hace más llevadero el proceso, ya que evita la frustración.
