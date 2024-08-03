@@ -1,12 +1,25 @@
 @0
-D=M //el contenido de 0 se guarda en D
-@1
-M=D //la cantidad de veces a repetir se guarda en M
-(LOOP)
-D=D+M
-M=M-1 //se disminuye una unidad M
-
 D=M
-@loop
-D;JEQ //si D es cero, ya terminamos
 
+@numero //contador
+M=D //se le asigna el valor que almacena la posición 0
+
+@suma //acumulador
+M=0 //se inicializa en cero la suma
+
+(LOOP)
+@END
+D;JEQ //si el contador es igual a cero, salta a END
+
+@suma
+M=D+M //al contenido de suma, se le adiciona el contenido de número
+
+@numero
+MD=M-1 //se le resta una unidad a número y se guarda ahí al igual que en D
+
+@LOOP
+0;JMP
+
+(END)
+@END
+0;JMP
