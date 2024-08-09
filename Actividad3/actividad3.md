@@ -15,6 +15,7 @@ Si se presiona la tecla L, se muestran unas líneas verticales en la pantalla.
 ### Pseudocódigo
 ![pseudoc+odigo_exp1](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/Exp1_pseudoc%C3%B3digo.jpeg)
 
+### Código
 ### Conclusión
 
 ## Experimento 2
@@ -28,4 +29,5 @@ Si se presiona la tecla D, se dibuja una nube en el centro de la pantalla.
 - 
 
 ### Pseudocódigo
+### Código
 ### Conclusión
