@@ -21,7 +21,7 @@ Si se presiona la tecla L, se muestran unas líneas verticales en la pantalla.
 ### Objetivo
 Si se presiona la tecla D, se dibuja una nube en el centro de la pantalla.
 
-![ejemplo_nube]()
+![ejemplo_nube](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/pngtree-white-cloud-pixel-icon-free-button-png-png-image_4490117.jpg)
 
 ### Planeación
 - Se necesita un ciclo para evaluar que efectivamente la letra que se ha presionado es la D, así que debe verificarse que el valor del registro 24576, que es el que corresponde al teclado, guarda el valor 68, que es el código correspondiente a la tecla D, específicamente en mayúscula.
