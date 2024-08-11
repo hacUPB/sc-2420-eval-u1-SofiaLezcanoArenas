@@ -162,11 +162,13 @@ M=0
     0;JMP
 ```
 ### Resultados
-Hubo un error en los cálculos, ya que por un registro de diferencia, la línea no quedó centrada. Los verdaderos valores de inicio y final, son el registro 23526 y el registro 23545 para obtener el resultado esperado.
+Hubo un error en los cálculos, ya que por un registro de diferencia, la línea no quedó centrada horizontalmente. Los verdaderos valores de inicio y final, son el registro 23526 y el registro 23545 para obtener el resultado esperado.
 
-![resultado_inesperado]()
+**Resultado inesperado:**
+![resultado_inesperado](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/resultado_inesperado.png)
 
-![resultado_ideal]()
+**Resultado ideal:**
+![resultado_ideal](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/resultado_ideal.png)
 
 ### Conclusiones
 - Para ilustraciones más complejas, el primer paso es dividirlas estratégicamente aprovechando los ciclos que se utilizan para graficar.
