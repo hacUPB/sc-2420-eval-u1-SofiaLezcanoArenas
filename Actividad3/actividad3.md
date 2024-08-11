@@ -16,7 +16,71 @@ Si se presiona la tecla L, se muestran unas líneas verticales en la pantalla.
 ![pseudoc+odigo_exp1](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/Exp1_pseudoc%C3%B3digo.jpeg)
 
 ### Código
+
+``` assembler
+@16384
+D=A
+@punt
+M=D
+
+@8192
+D=A
+@cont
+M=D
+
+@tecla
+M=0
+
+(TECLADO)
+    @24576
+    D=M
+    @tecla
+    M=D
+
+    @76
+    D=D-A
+
+    @LINEAS
+    D;JEQ
+    @TECLADO
+    0;JMP
+
+(LINEAS)
+    @punt
+    A=M
+    M=1
+
+    @punt
+    M=M+1
+
+    @cont
+    MD=M-1
+
+    @LINEAS
+    D;JGT
+
+(END)
+    @END
+    0;JMP
+
+```
+
+### Resultados
+imagen
+
+Como se puede apreciar, el objetivo se cumplió. Aunque podría parecer que en algunos registros no se realizó correctamente el cambió del bit menos significativo, la siguiente imagen demuestra que sí.
+
+imagen
+
+Además, cuando se pausó el programa un momentó para aumentar la velocidad, ya que tomaba demasiado, mientras se movía la perilla, se apreciaban por instantes los bits faltantes en negro.
+
+En un último intento por comprobar si la velocidad tenía que ver con el fallo de la pantalla, se colocó a la mínima velocidad, pero el resultado fue el mismo. Dada la lentitud, se capturó apenas cuando iba por la segunda fila de registros de la pantalla.
+
+imagen
+
 ### Conclusión
+
+Realizar una previa planeación colabora bastante para luego desarrollar el pseudocódigo y finalmente el código.
 
 ## Experimento 2
 ### Objetivo
