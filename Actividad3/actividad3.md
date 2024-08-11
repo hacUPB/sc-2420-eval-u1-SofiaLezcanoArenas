@@ -165,9 +165,11 @@ M=0
 Hubo un error en los cálculos, ya que por un registro de diferencia, la línea no quedó centrada horizontalmente. Los verdaderos valores de inicio y final, son el registro 23526 y el registro 23545 para obtener el resultado esperado.
 
 **Resultado inesperado:**
+
 ![resultado_inesperado](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/resultado_inesperado.png)
 
 **Resultado ideal:**
+
 ![resultado_ideal](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/resultado_ideal.png)
 
 ### Conclusiones
