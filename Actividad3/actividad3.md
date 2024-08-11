@@ -96,6 +96,9 @@ Si se presiona la tecla D, se dibuja la siguiente figura en medio de la pantalla
 
 - El dibujo debería dividirse en 8 ciclos, uno por cada recta que hay. Para ellos, tendría que cambiarse el valor del puntero y del contador según se necesite antes de comenzarlos.
   - Ciclo 1: en registros, la mitad de la pantalla verticalmente sería 128, y horizontalmente 16, así que habría que bajar hasta la línea 224 (128 + 96) y en esa línea, habría que graficar del 6 al 26. Haciendo el cálculo de 16384 + 223(32) + 5 = 23525, encontramos que en el registro 23525 empezaría esta recta y finalizaría 20 registros después, en el 23545.
+  - 
+    ![linea1](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/plan_linea1.jpeg)
+
   - Ciclo 2: comenzaría en la línea 128, habría que colocar en 1 el bit más significativo del registro 16384 + 128(32) + 5 = 20485, y de ahí, sumar 32 para llegar al registro justo debajo. Esto debe repetirse 96 veces.
   - Ciclo 3: comenzaría en la línea 128, habría que colocar en 1 el bit menos significativo del registro 16384 + 128(32) + 25 = 20505, y de ahí, sumar 32 para llegar al registro justo debajo. Esto debe repetirse 96 veces.
   - Ciclo 4: comenzaría en la línea 128, también en el registro 20485, pero debe colocarse en 1 por completo junto con los siguientes 6 registros.
@@ -109,7 +112,7 @@ Si se presiona la tecla D, se dibuja la siguiente figura en medio de la pantalla
 ### Pseudocódigo
 Para efectos de agilidad, se realizaran solo el ciclo de la tecla y el de la línea base.
 
-![]()
+![pseudo2](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/pseudo2.jpeg)
 
 ### Código
 ``` assembler
@@ -161,7 +164,9 @@ M=0
 ### Resultados
 Hubo un error en los cálculos, ya que por un registro de diferencia, la línea no quedó centrada. Los verdaderos valores de inicio y final, son el registro 23526 y el registro 23545 para obtener el resultado esperado.
 
-![]()
+![resultado_inesperado]()
+
+![resultado_ideal]()
 
 ### Conclusiones
 - Para ilustraciones más complejas, el primer paso es dividirlas estratégicamente aprovechando los ciclos que se utilizan para graficar.
