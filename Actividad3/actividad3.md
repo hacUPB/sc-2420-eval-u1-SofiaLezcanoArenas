@@ -62,7 +62,6 @@ M=0
 (END)
     @END
     0;JMP
-
 ```
 
 ### Resultados
@@ -95,7 +94,7 @@ Si se presiona la tecla D, se dibuja la siguiente figura en medio de la pantalla
 - Hay que establecer las medidas de la figura en registros para poder saber cómo generar los ciclos.
   ![figura_plan](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/figura_plan.jpeg)
 
-- El dibujo debería dividirse en 8 ciclos, uno por cada recta que hay.
+- El dibujo debería dividirse en 8 ciclos, uno por cada recta que hay. Para ellos, tendría que cambiarse el valor del puntero y del contador según se necesite antes de comenzarlos.
   - Ciclo 1: en registros, la mitad de la pantalla verticalmente sería 128, y horizontalmente 16, así que habría que bajar hasta la línea 224 (128 + 96) y en esa línea, habría que graficar del 6 al 26. Haciendo el cálculo de 16384 + 223(32) + 5 = 23525, encontramos que en el registro 23525 empezaría esta recta y finalizaría 20 registros después, en el 23545.
   - Ciclo 2: comenzaría en la línea 128, habría que colocar en 1 el bit más significativo del registro 16384 + 128(32) + 5 = 20485, y de ahí, sumar 32 para llegar al registro justo debajo. Esto debe repetirse 96 veces.
   - Ciclo 3: comenzaría en la línea 128, habría que colocar en 1 el bit menos significativo del registro 16384 + 128(32) + 25 = 20505, y de ahí, sumar 32 para llegar al registro justo debajo. Esto debe repetirse 96 veces.
@@ -114,8 +113,56 @@ Para efectos de agilidad, se realizaran solo el ciclo de la tecla y el de la lí
 
 ### Código
 ``` assembler
+@23526
+D=A
+@punt
+M=D //se establece el primer valor del puntero
 
+@20
+D=A
+@cont
+M=D //se establece el primer valor del contador
+
+@tecla
+M=0
+
+(TECLADO)
+    @24576
+    D=M
+    @tecla
+    M=D
+
+    @68
+    D=D-A
+
+    @CICLO1
+    D;JEQ
+    @TECLADO
+    0;JMP
+
+(CICLO1)
+    @punt
+    A=M
+    M=-1
+
+    @punt
+    M=M+1
+
+    @cont
+    MD=M-1
+
+    @CICLO1
+    D;JGT
+
+(END)
+    @END
+    0;JMP
 ```
+### Resultados
+Hubo un error en los cálculos, ya que por un registro de diferencia, la línea no quedó centrada. Los verdaderos valores de inicio y final, son el registro 23526 y el registro 23545 para obtener el resultado esperado.
+
+![]()
 
 ### Conclusiones
-- Para ilustraciones más complejas, hay que dividirlas estratégicamente aprovechando los ciclos que se utilizan para graficar.
+- Para ilustraciones más complejas, el primer paso es dividirlas estratégicamente aprovechando los ciclos que se utilizan para graficar.
+- La mejor manera de comprobar que los cálculos para la ubicación de gráficos en la pantalla son correctos, es ensayando y observando en el simulador.
