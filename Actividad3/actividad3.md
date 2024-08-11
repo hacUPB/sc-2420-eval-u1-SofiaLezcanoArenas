@@ -13,7 +13,7 @@ Si se presiona la tecla L, se muestran unas líneas verticales en la pantalla.
 - Finalmente, cuando el ciclo termine, debe entrar al ciclo infinito del final para evitar que siga ejecutando más líneas hacia abajo.
 
 ### Pseudocódigo
-![pseudoc+odigo_exp1](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/Exp1_pseudoc%C3%B3digo.jpeg)
+![pseudoc+odigo_exp1](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/pseudo1.jpeg)
 
 ### Código
 
@@ -86,11 +86,17 @@ Realizar una previa planeación es bastante útil para luego desarrollar el pseu
 ### Objetivo
 Si se presiona la tecla D, se dibuja la siguiente figura en la pantalla.
 
-![ejemplo_nube]()
+![figura2](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/figura2.jpeg)
 
 ### Planeación
 - Se necesita un ciclo para evaluar que efectivamente la letra que se ha presionado es la D, así que debe verificarse que el valor del registro 24576, que es el que corresponde al teclado, guarda el valor 68, que es el código correspondiente a la tecla D, específicamente en mayúscula.
-- El dibujo de la nube debería dividirse en al menos
+  
+- Hay que establecer las medidas de la figura en registros para poder saber cómo generar los ciclos.
+  ![figura_plan](https://github.com/hacUPB/sc-2420-eval-u1-SofiaLezcanoArenas/blob/main/Actividad3/figura_plan.jpeg)
+
+- El dibujo debería dividirse en al menos 5 ciclos, uno para la línea inferior horizontal, el segundo para las líneas verticales inferiores, el tercero para las líneas horizontales del medio, el cuarto para las líneas verticales superiores y el quinto para la línea horizontal superior.
+  
+- Finalmente, cuando los ciclos terminen, debe entrar al ciclo infinito del final para evitar que siga ejecutando más líneas hacia abajo.
 
 ### Pseudocódigo
 ### Código
