@@ -108,7 +108,7 @@ Si se presiona la tecla D, se dibuja la siguiente figura en medio de la pantalla
 - Finalmente, cuando los ciclos terminen, debe entrar al ciclo infinito del final para evitar que siga ejecutando más líneas hacia abajo.
 
 ### Pseudocódigo
-Para efectos de agilidad, se realizaran solo los dos primeros ciclos mencionados anteriormente.
+Para efectos de agilidad, se realizaran solo el ciclo de la tecla y el de la línea base.
 
 ![]()
 
